@@ -5,7 +5,8 @@ import json
 #Load Data (Put JSON data into ./data/ folder!!!)
 print("Loading playlists data...")
 with open("./data/Playlists.json", "r", encoding='utf-8') as rf:
-    PLAYLISTS = json.load(rf) #is a list containing all playlists
+     PLAYLISTS = json.load(rf) #is a list containing all playlists
+
 print("Loading tracks data...")    
 with open("./data/Tracks.json", "r", encoding='utf-8') as rf:
     TRACKS = json.load(rf) #is a dictionary! containing tracks that exists through all playlists
