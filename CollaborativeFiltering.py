@@ -31,9 +31,10 @@ for i in range(10000):#len(df_playlists)):
         #Add a row to ratings_df with the playlist id and the track uri
         track = playlist[tracksIndex][j]
         new_entry = pd.DataFrame({'user':id, 'item':track}, index=[0])
-        ratings_df = pd.concat([ratings_df, new_entry])
+        #ratings_df = pd.concat([ratings_df, new_entry])
+        new_entry.to_csv('data/ratings_new.csv', mode='a', index=False, encoding='utf-8', header=False)
     id+=1
-    ratings_df.to_csv('data/ratings.csv', index = False, encoding='utf-8')
+
 print("--- %s seconds ---" % (time.time() - start_time))
 
 #Basically copied from lab

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment="check please">
-      <change afterPath="$PROJECT_DIR$/CollabTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" afterDir="false" />
+    <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment="CollaborativeFilteringPreProcessed is the final file">
+      <change afterPath="$PROJECT_DIR$/data/ratings_new.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollaborativeFiltering.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollaborativeFiltering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preProcessingPandasDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/preProcessingPandasDemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +54,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Users/Dino/Recommender Systems/Project/recsys"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Dino/Recommender Systems/Project/recsys&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CollaborativeFiltering">
+  <component name="RunManager" selected="Python.CollaborativeFilteringPreProcessed">
     <configuration name="CollaborativeFiltering" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +80,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CollaborativeFiltering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CollaborativeFilteringPreProcessed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="recsys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,6 +175,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CollaborativeFilteringPreProcessed" />
         <item itemvalue="Python.CollaborativeFiltering" />
         <item itemvalue="Python.preProcessingPandasDemo (1)" />
         <item itemvalue="Python.preProcessingPandasDemo" />
@@ -186,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664237355586</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CollaborativeFilteringPreProcessed is the final file">
+      <created>1664282638733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664282638733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +233,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="check please" />
-    <option name="LAST_COMMIT_MESSAGE" value="check please" />
+    <MESSAGE value="CollaborativeFilteringPreProcessed is the final file" />
+    <option name="LAST_COMMIT_MESSAGE" value="CollaborativeFilteringPreProcessed is the final file" />
   </component>
 </project>

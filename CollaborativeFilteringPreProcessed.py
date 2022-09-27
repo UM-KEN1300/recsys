@@ -8,7 +8,9 @@ import time
 
 start_time = time.time()
 print("Creating Ratings Dataframe...")
-ratings_df = pd.read_csv('data/ratings.csv')
+df_playlists = pd.read_json('data/Playlists.json')
+ratings_df = pd.read_csv('data/ratings_new.csv')
+ratings_df.columns=['user', 'item']
 df_tracks = pd.read_json('data/tracks.json')
 print("Playlists Ratings created!")
 print("--- %s seconds ---" % (time.time() - start_time))
@@ -22,13 +24,11 @@ start_time = time.time()
 recsys.fit(ratings_df)
 print("--- %s seconds ---" % (time.time() - start_time))
 
-#Todo: what is a user? It would make sense it is the same type as in the ratings_df DF (id in this case) but that doesnt seem to work
-
-
-for u in range(3):
+for u in range(0,50):
     selected_user = u
     selected_tracks_useruser = recsys.recommend(selected_user, num_recs)
     #Print the names of the recommended songs
+    print(df_playlists.iloc[u]['name'])
     print(selected_tracks_useruser)
     for i in range(len(selected_tracks_useruser)):
         print(df_tracks[selected_tracks_useruser.loc[i, 'item']]['track_name'])
