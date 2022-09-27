@@ -19,7 +19,8 @@ track = df_playlists.iloc[0][tracksIndex][0]
 
 #Then we can access the track content through df_tracks (which acts like a dictionary, track is the uri here)
 track_info = df_tracks[track]
-print(track_info)
+
+print(track_info['track_name'])
 
 
 
