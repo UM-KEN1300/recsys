@@ -45,7 +45,6 @@ recsys = Recommender.adapt(item_item)
 start_time = time.time()
 recsys.fit(ratings_df)
 print("--- %s seconds ---" % (time.time() - start_time))
-#Todo: what is a user? It would make sense it is the same type as in the ratings_df DF (id in this case) but that doesnt seem to work
 selected_user = 0
 selected_tracks_useruser = recsys.recommend(selected_user, num_recs)
 #Print the names of the recommended songs
