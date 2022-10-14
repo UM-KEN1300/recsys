@@ -57,6 +57,4 @@ def compute_ratings(playlist_1, playlist_2, playlist_3, playlist_4):
                     similarity_sum += cosine_similarity.cosine_similarity_by_uri(playlist_4[k], playlist[j])
                 other_ratings_playlist_4.update({playlist[j]: (similarity_sum / len(playlist_4))})
 
-
-
     return other_ratings_playlist_1, other_ratings_playlist_2, other_ratings_playlist_3, other_ratings_playlist_4

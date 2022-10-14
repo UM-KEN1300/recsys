@@ -18,16 +18,17 @@ playlist_3 = PLAYLISTS[2]['tracks']
 print("Playlist 3, " + PLAYLISTS[2]['name'] + " added, with " + str(len(playlist_3)) + " songs.")
 playlist_4 = PLAYLISTS[3]['tracks']
 print("Playlist 4, " + PLAYLISTS[3]['name'] + " added, with " + str(len(playlist_4)) + " songs.")
-
 tracks = playlist_1 + playlist_2 + playlist_3 + playlist_4
-
 
 target_size = math.floor((len(playlist_1) + len(playlist_2) + len(playlist_3) + len(playlist_4))/4)
 print("Target playlist will contain " + str(target_size) + " songs.")
 
-
 ratings_playlist_1, ratings_playlist_2, ratings_playlist_3, ratings_playlist_4 = compute_ratings.compute_ratings(playlist_1, playlist_2, playlist_3, playlist_4)
-print(ratings_playlist_1)
 
 
 
+for i in range(len(tracks)):
+    uri = tracks[i]
+    rating_user_1 = ratings_playlist_1[uri]
+    print(uri + ": " + str(rating_user_1))
+    ###....
