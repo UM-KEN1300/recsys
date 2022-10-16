@@ -49,12 +49,27 @@ def compute_ratings(playlist_1, playlist_2, playlist_3, playlist_4):
                 other_ratings_playlist_3.update({playlist[j]: (similarity_sum / len(playlist_3))})
 
     for i in range(0, 3):
-        if i != 2:
-            playlist = playlists[i]
-            for j in range(len(playlist)):
-                similarity_sum = 0
-                for k in range(len(playlist_4)):
-                    similarity_sum += cosine_similarity.cosine_similarity_by_uri(playlist_4[k], playlist[j])
-                other_ratings_playlist_4.update({playlist[j]: (similarity_sum / len(playlist_4))})
+        playlist = playlists[i]
+        for j in range(len(playlist)):
+            similarity_sum = 0
+            for k in range(len(playlist_4)):
+                similarity_sum += cosine_similarity.cosine_similarity_by_uri(playlist_4[k], playlist[j])
+            other_ratings_playlist_4.update({playlist[j]: (similarity_sum / len(playlist_4))})
 
     return other_ratings_playlist_1, other_ratings_playlist_2, other_ratings_playlist_3, other_ratings_playlist_4
+
+def compute_ratings_explanations(uri, playlist):
+    highest_similarity = 0
+    second_highest_similarity = 0
+    most_similar = None
+    second_most_similar = None
+    for i in range(len(playlist)):
+        if cosine_similarity.cosine_similarity_by_uri(uri, playlist[i])>second_highest_similarity:
+            if cosine_similarity.cosine_similarity_by_uri(uri, playlist[i]) > highest_similarity:
+                highest_similarity = cosine_similarity.cosine_similarity_by_uri(uri, playlist[i])
+                second_most_similar = most_similar
+                most_similar = playlist[i]
+            else:
+                second_most_similar = playlist[i]
+                cosine_similarity.cosine_similarity_by_uri(uri, playlist[i])
+    return most_similar, second_most_similar

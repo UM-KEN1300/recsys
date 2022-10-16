@@ -3,13 +3,16 @@ import pandas as pd
 import lenskit as lk
 from lenskit.algorithms import Recommender
 from lenskit.algorithms.item_knn import ItemItem
+from groups import explanations
 tracksIndex = 4
 import time
 
 start_time = time.time()
 print("Creating Ratings Dataframe...")
+with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Playlists_small.json", encoding="utf8") as f:
+    PLAYLISTS = json.load(f)
 df_playlists = pd.read_json('data/Playlists.json')
-ratings_df = pd.read_csv('data/ratings_new.csv')
+ratings_df = pd.read_csv('data/ratings.csv')
 ratings_df.columns=['user', 'item']
 df_tracks = pd.read_json('data/tracks.json')
 print("Playlists Ratings created!")
@@ -24,13 +27,15 @@ start_time = time.time()
 recsys.fit(ratings_df)
 print("--- %s seconds ---" % (time.time() - start_time))
 
-for u in range(0,50):
-    selected_user = u
-    selected_tracks_useruser = recsys.recommend(selected_user, num_recs)
-    #Print the names of the recommended songs
-    print(df_playlists.iloc[u]['name'])
-    print(selected_tracks_useruser)
-    for i in range(len(selected_tracks_useruser)):
-        print(df_tracks[selected_tracks_useruser.loc[i, 'item']]['track_name'])
+
+selected_user = 0
+selected_tracks_useruser = recsys.recommend(selected_user, num_recs)
+#Print the names of the recommended songs
+print(df_playlists.iloc[0]['name'])
+print(selected_tracks_useruser)
+
+for i in range(len(selected_tracks_useruser)):
+    explanations.explanation_individual(selected_tracks_useruser.loc[i, 'item'], PLAYLISTS[0]['tracks'])
+
 
 

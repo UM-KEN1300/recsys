@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment="ratings system for songs in other playlists fully implemented">
+      <change afterPath="$PROJECT_DIR$/groups/explanations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/compute_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/compute_ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/verify_dataset.py" afterDir="false" />
+    </list>
+    <list id="c1434336-431f-404c-9bd6-09a87b76686e" name="Changes by laure" comment="">
       <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groups/compute_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/compute_ratings.py" afterDir="false" />
     </list>
@@ -45,6 +52,25 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/groups/compute_ratings.py">
+      <ranges>
+        <range start1="13" end1="13" start2="13" end2="14" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
+        <range start1="51" end1="58" start2="52" end2="58" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="60" end1="60" start2="60" end2="76" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/groups/aggregation.py">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="6" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="7" end1="8" start2="10" end2="11" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
+        <range start1="22" end1="23" start2="25" end2="26" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="27" end1="29" start2="30" end2="33" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="32" end1="34" start2="36" end2="78" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="35" end1="35" start2="79" end2="90" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,6 +83,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Users/Dino/Recommender Systems/Project/recsys&quot;
   }
 }</component>
@@ -68,7 +95,28 @@
       <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\similarity" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.aggregation">
+  <component name="RunManager" selected="Python.CollaborativeFilteringPreProcessed">
+    <configuration name="CollaborativeFilteringPreProcessed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="recsys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="aggregation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cosine_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="explanations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,32 +188,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similarity" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/groups" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similarity/cosine_similarity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="exploration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="recsys" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similarity" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similarity/exploration.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/groups/explanations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CollaborativeFilteringPreProcessed" />
         <item itemvalue="Python.aggregation" />
+        <item itemvalue="Python.explanations" />
         <item itemvalue="Python.compute_ratings (1)" />
         <item itemvalue="Python.compute_ratings" />
-        <item itemvalue="Python.cosine_similarity" />
-        <item itemvalue="Python.exploration" />
       </list>
     </recent_temporary>
   </component>
