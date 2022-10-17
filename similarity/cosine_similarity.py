@@ -1,9 +1,11 @@
 import json
 from numpy import dot
 from numpy.linalg import norm
-
+from matplotlib import pyplot as plt
 with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Tracks.json", encoding="utf8") as f:
     TRACKS = json.load(f)
+with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Playlists_small.json", encoding="utf8") as f:
+    PLAYLISTS = json.load(f)
 
 #Gets only relevant features: through experimenting and research found that these work best
 def get_relevant_features(list):
@@ -34,4 +36,51 @@ def cosine_similarity_by_uri(uri_1, uri_2):
     list_2 = list(TRACKS[uri_2].values())
     return cosine_similarity(list_1, list_2)
 
+def compute_intra_playlist_similarity():
+    playlist_1 = PLAYLISTS[0]['tracks']
+    total = 0
+    print(playlist_1)
 
+    similarities = []
+    for playlist in PLAYLISTS:
+        print(playlist)
+        similarity = 0
+        total = 0
+        playlist_1 = playlist['tracks']
+        for uri_1 in playlist_1:
+            for uri_2 in playlist_1:
+                if uri_1 != uri_2:
+                    similarity += cosine_similarity_by_uri(uri_1, uri_2)
+                    total += 1
+        similarity = similarity / total
+        similarities.append(similarity)
+
+    fig, ax = plt.subplots(1, 1)
+    plt.hist(similarities)
+    ax.set_xlabel('similarity')
+    ax.set_ylabel('# of playlists')
+    plt.show()
+
+def compute_playlist_similarity():
+    similarities = []
+    for playlist_1 in PLAYLISTS:
+        playlist_1 = playlist_1['tracks']
+        for playlist_2 in PLAYLISTS:
+            playlist_2 = playlist_2['tracks']
+            similarity = 0
+            total = 0
+            if playlist_1!=playlist_2:
+                for uri_1 in playlist_1:
+                    for uri_2 in playlist_2:
+                        similarity += cosine_similarity_by_uri(uri_1, uri_2)
+                        total += 1
+                similarity = similarity / total
+                similarities.append(similarity)
+
+    fig, ax = plt.subplots(1, 1)
+    plt.hist(similarities)
+    ax.set_xlabel('similarity')
+    ax.set_ylabel('# of playlists')
+    plt.show()
+
+compute_playlist_similarity()
