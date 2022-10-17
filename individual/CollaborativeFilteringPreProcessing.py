@@ -9,10 +9,10 @@ import time
 #Note that I created test version files which are very short just to see if things run
 start_time = time.time()
 print("Creating Playlists Dataframe...")
-df_playlists = pd.read_json('data/Playlists.json')
+df_playlists = pd.read_json('../data/Playlists.json')
 print("Playlists Dataframe created!")
 print("Creating Tracks Dataframe...")
-df_tracks = pd.read_json('data/Tracks.json')
+df_tracks = pd.read_json('../data/Tracks.json')
 print("Tracks Dataframe created")
 print("--- %s seconds ---" % (time.time() - start_time))
 #Create empty dataframe with needed columns
@@ -24,7 +24,7 @@ id = 0
 
 start_time = time.time()
 for i in range(10000):#len(df_playlists)):
-    #Locate them (enhanced for loops with dataframes are messy)
+    #Locate them
     playlist = df_playlists.iloc[i]
     #For each playlist see go over all tracks
     for j in range(len(playlist[tracksIndex])):
@@ -37,7 +37,7 @@ for i in range(10000):#len(df_playlists)):
 
 print("--- %s seconds ---" % (time.time() - start_time))
 
-#Basically copied from lab
+
 num_recs = 10
 k = 15
 item_item = ItemItem(k, min_nbrs=3, center=False, feedback='implicit', use_ratings=False)

@@ -2,16 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment="ratings system for songs in other playlists fully implemented">
-      <change afterPath="$PROJECT_DIR$/groups/explanations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" beforeDir="false" afterPath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollabTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollaborativeFiltering.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual/CollaborativeFilteringPreProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_to_mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/dataset_to_mongodb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/compute_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/compute_ratings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verify_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/verify_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/compute_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity/compute_ratings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/explanations.py" beforeDir="false" afterPath="$PROJECT_DIR$/explanations/explanations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preProcessingPandasDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessedDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/similarity/cosine_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity/cosine_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracks_from_spotify_to_mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/tracks_from_spotify_to_mongodb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/verify_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/verify_dataset.py" afterDir="false" />
     </list>
     <list id="c1434336-431f-404c-9bd6-09a87b76686e" name="Changes by laure" comment="">
       <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/compute_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/compute_ratings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="preproc" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,21 +60,21 @@
     </file-type-list>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/groups/compute_ratings.py">
-      <ranges>
-        <range start1="13" end1="13" start2="13" end2="14" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
-        <range start1="51" end1="58" start2="52" end2="58" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="60" end1="60" start2="60" end2="76" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/groups/aggregation.py">
       <ranges>
-        <range start1="3" end1="3" start2="3" end2="6" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="7" end1="8" start2="10" end2="11" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
-        <range start1="22" end1="23" start2="25" end2="26" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="27" end1="29" start2="30" end2="33" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="32" end1="34" start2="36" end2="78" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="35" end1="35" start2="79" end2="90" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="1" end1="3" start2="1" end2="2" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="5" end1="6" start2="4" end2="5" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="10" end1="11" start2="9" end2="10" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
+        <range start1="15" end1="15" start2="14" end2="15" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="25" end1="25" start2="25" end2="26" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="28" end1="28" start2="29" end2="30" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="29" end1="29" start2="31" end2="32" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="31" end1="32" start2="34" end2="35" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="48" end1="49" start2="51" end2="52" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="55" end1="55" start2="58" end2="59" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="61" end1="62" start2="65" end2="67" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="78" end1="79" start2="83" end2="84" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="85" end1="85" start2="90" end2="91" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
       </ranges>
     </file>
   </component>
@@ -92,11 +99,14 @@
       <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\individual" />
       <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\similarity" />
+      <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\explanations" />
+      <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\database" />
     </key>
   </component>
   <component name="RunManager" selected="Python.CollaborativeFilteringPreProcessed">
-    <configuration name="CollaborativeFilteringPreProcessed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="CollaborativeFiltering" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CollaborativeFilteringPreProcessed.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Dino\Recommender Systems\Project\recsys\individual\CollaborativeFiltering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="compute_ratings (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="compute_ratings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,7 +160,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/groups/compute_ratings.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Dino\Recommender Systems\Project\recsys\similarity\compute_ratings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,7 +181,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Users\Dino\Recommender Systems\Project\recsys\groups\compute_ratings.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Dino\Recommender Systems\Project\recsys\similarity\compute_ratings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +202,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/groups/explanations.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Dino\Recommender Systems\Project\recsys\explanations\explanations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665493196086</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ratings system for songs in other playlists fully implemented">
+      <created>1665955615983</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665955615983</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

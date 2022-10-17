@@ -16,7 +16,7 @@ SPOTIFY = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials('5
 
 
 res = SPOTIFY.audio_features('spotify:track:0UaMYEvWZi0ZqiDOoHU3YI')[0]
-DATA_PATH = "./dataset/data/"
+DATA_PATH = "../dataset/data/"
 
 data_slices = [f for f in listdir(DATA_PATH) if isfile(join(DATA_PATH, f))]
 

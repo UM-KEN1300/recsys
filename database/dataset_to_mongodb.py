@@ -7,7 +7,7 @@ MONGO = MongoClient('localhost', 27017)
 
 DB_PLAYLISTS = MONGO['Spotify']['Playlists']
 
-DATA_PATH = "./dataset/data/"
+DATA_PATH = "../dataset/data/"
 data_slices = [f for f in listdir(DATA_PATH) if isfile(join(DATA_PATH, f))]
 
 for file in data_slices:

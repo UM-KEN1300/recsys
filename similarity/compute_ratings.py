@@ -1,33 +1,44 @@
 import json
 from similarity import cosine_similarity
 print("Loading tracks and playlists..")
-with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Tracks.json", encoding="utf8") as f:
+with open("/data/Tracks.json", encoding="utf8") as f:
     TRACKS = json.load(f)
 #Maybe we can get a smaller version of this file cause we only really need a couple playlists
-with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Playlists_small.json", encoding="utf8") as f:
+with open("/data/Playlists_small.json", encoding="utf8") as f:
     PLAYLISTS = json.load(f)
 print('Tracks and playlists loaded!')
 
+#Function to add all songs that are in the playlist to it's own rated songs with a value of 1
 def add_own_songs(playlist, ratings):
     for i in range(len(playlist)):
         ratings.update({playlist[i]: 1})
+
+#Method that estimates the ratings of other songs not in a playlist
 def compute_ratings(playlist_1, playlist_2, playlist_3, playlist_4):
+    #Create list of playlists and empty dictionaries for each playlist
     playlists = [playlist_1, playlist_2, playlist_3, playlist_4]
     other_ratings_playlist_1 = {}
     other_ratings_playlist_2 = {}
     other_ratings_playlist_3 = {}
     other_ratings_playlist_4 = {}
 
+    #Add songs of each playlist to its rating
     add_own_songs(playlist_1, other_ratings_playlist_1)
     add_own_songs(playlist_2, other_ratings_playlist_2)
     add_own_songs(playlist_3, other_ratings_playlist_3)
     add_own_songs(playlist_4, other_ratings_playlist_4)
+
+
+    #For all playlists except for the playlist we are looping over
     for i in range(1, 4):
         playlist = playlists[i]
+        #Loop over the playlist
         for j in range(len(playlist)):
             similarity_sum = 0
+            #And sum the similarities that song j has with each song k in the original playlist
             for k in range(len(playlist_1)):
                 similarity_sum += cosine_similarity.cosine_similarity_by_uri(playlist_1[k], playlist[j])
+            #Normalize the similarity and update
             other_ratings_playlist_1.update({playlist[j]: (similarity_sum / len(playlist_1))})
 
     for i in range(0, 4):
@@ -58,6 +69,7 @@ def compute_ratings(playlist_1, playlist_2, playlist_3, playlist_4):
 
     return other_ratings_playlist_1, other_ratings_playlist_2, other_ratings_playlist_3, other_ratings_playlist_4
 
+#This method finds the two most similar songs in a playlist to a given URI
 def compute_ratings_explanations(uri, playlist):
     highest_similarity = 0
     second_highest_similarity = 0
