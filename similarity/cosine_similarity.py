@@ -83,4 +83,14 @@ def compute_playlist_similarity():
     ax.set_ylabel('# of playlists')
     plt.show()
 
-compute_playlist_similarity()
+def compute_playlist_list_similarity(playlist, list):
+    playlist_1 = playlist['tracks']
+    similarity = 0
+    total = 0
+    for uri_1 in playlist_1:
+        for uri_2 in list:
+            similarity += cosine_similarity_by_uri(uri_1, uri_2)
+            total += 1
+    similarity = similarity / total
+    return similarity
+
