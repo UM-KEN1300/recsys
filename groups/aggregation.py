@@ -92,9 +92,10 @@ def aggregate(indices):
                               key=operator.itemgetter(1), reverse=True)
 
     final_playlist_LM_MP_WM = []
-    for i in range(target_size):
+    for i in range(min(len(ratings_LM_MP_WM), target_size)):
         print("Song " + str(i + 1) + ": " + TRACKS[ratings_LM_MP_WM[i][0]]
         ['track_name'] + " with a rating of " + str(ratings_LM_MP_WM[i][1]) + ".")
+        print(ratings_LM_MP_WM[i][0])
         final_playlist_LM_MP_WM.append(ratings_LM_MP_WM[i][0])
 
     for song in final_playlist_LM_MP_WM:
@@ -262,14 +263,17 @@ def aggregate(indices):
         similarity_user_2_sum += ratings_playlist_2[song]
         similarity_user_3_sum += ratings_playlist_3[song]
         similarity_user_4_sum += ratings_playlist_4[song]
-
-    print("Average expected rating user 1: " + str(similarity_user_1_sum / target_size))
-    print("Average expected rating user 2: " + str(similarity_user_2_sum / target_size))
-    print("Average expected rating user 3: " + str(similarity_user_3_sum / target_size))
-    print("Average expected rating user 4: " + str(similarity_user_4_sum / target_size))
-    list_nums_LM_MP_WM = [songs_in_playlist_1, songs_in_playlist_2, songs_in_playlist_3, songs_in_playlist_4]
-    list_ratings_LM_MP_WM = [similarity_user_1_sum / target_size, similarity_user_2_sum / target_size,
-                       similarity_user_3_sum / target_size, similarity_user_4_sum / target_size]
+    if len(ratings_LM_MP_WM) == 0:
+        list_nums_LM_MP_WM = [0,0,0,0]
+        list_ratings_LM_MP_WM = [0,0,0,0]
+    else:
+        print("Average expected rating user 1: " + str(similarity_user_1_sum / min(len(ratings_LM_MP_WM), target_size)))
+        print("Average expected rating user 2: " + str(similarity_user_2_sum / min(len(ratings_LM_MP_WM), target_size)))
+        print("Average expected rating user 3: " + str(similarity_user_3_sum / min(len(ratings_LM_MP_WM), target_size)))
+        print("Average expected rating user 4: " + str(similarity_user_4_sum / min(len(ratings_LM_MP_WM), target_size)))
+        list_nums_LM_MP_WM = [songs_in_playlist_1, songs_in_playlist_2, songs_in_playlist_3, songs_in_playlist_4]
+        list_ratings_LM_MP_WM = [similarity_user_1_sum /  min(len(ratings_LM_MP_WM), target_size), similarity_user_2_sum /  min(len(ratings_LM_MP_WM), target_size),
+                           similarity_user_3_sum /  min(len(ratings_LM_MP_WM), target_size), similarity_user_4_sum /  min(len(ratings_LM_MP_WM), target_size)]
     return list_nums_AVG, list_ratings_AVG, list_nums_LM, list_ratings_LM, list_nums_LM_MP_WM, list_ratings_LM_MP_WM
 
 
@@ -280,9 +284,9 @@ sum_list_ratings_LM = [0,0,0,0]
 sum_list_nums_LM_MP_WM = [0,0,0,0]
 sum_list_ratings_LM_MP_WM = [0,0,0,0]
 
-num_samples = 10
+num_samples = 100
 for i in range(num_samples):
-    indices = [1,2,12,14]#random.sample(range(0, len(PLAYLISTS)), 4)
+    indices = random.sample(range(0, len(PLAYLISTS)), 4)
     list_nums_AVG, list_ratings_AVG, list_nums_LM, list_ratings_LM, list_nums_LM_MP_WM, list_ratings_LM_MP_WM = aggregate(indices)
 
     sum_list_nums_AVG = np.add(sum_list_nums_AVG, list_nums_AVG)
@@ -316,6 +320,6 @@ print("Average rating of songs per list:")
 print(sum_list_ratings_LM_MP_WM)
 
 print("AVERAGE vs LEAST MISERY vs LM_MP_WM: ")
-print(np.sum(sum_list_ratings_AVG))
-print(np.sum(sum_list_ratings_LM))
-print(np.sum(sum_list_ratings_LM_MP_WM))
+print(np.sum(sum_list_ratings_AVG)/4)
+print(np.sum(sum_list_ratings_LM)/4)
+print(np.sum(sum_list_ratings_LM_MP_WM)/4)

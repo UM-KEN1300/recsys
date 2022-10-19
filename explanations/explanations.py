@@ -45,3 +45,14 @@ def explanation_groups_LM(playlist_explain, final_playlist, uri, user_that_likes
     #If the song passed is not in the user's playlist but is in the final playilst
     elif uri in final_playlist:
         explanation_groups_XYZ(playlist_explain, uri, user_that_likes_song)
+
+def explanation_groups_missing_LM_MP_WM(uri, user_that_dislikes):
+    print(TRACKS[uri]['track_name'] + " is not in the playlist because user " +
+          str(user_that_dislikes) + " really hates that song.")
+def explanation_groups_LM_MP_WM(playlist_explain, final_playlist, uri, user_that_likes_song, user_that_dislikes):
+    # If the song passed is in the user's playlist but not in the final playlist
+    if uri in playlist_explain and uri not in final_playlist:
+        explanation_groups_missing_LM_MP_WM(uri, user_that_dislikes)
+    # If the song passed is not in the user's playlist but is in the final playilst
+    elif uri in final_playlist:
+        explanation_groups_XYZ(playlist_explain, uri, user_that_likes_song)
