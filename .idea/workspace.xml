@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" afterDir="false" />
     </list>
-    <list id="c1434336-431f-404c-9bd6-09a87b76686e" name="Changes by laure" comment="">
+    <list id="c1434336-431f-404c-9bd6-09a87b76686e" name="Changes by laure" comment="Changes by laure">
       <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
     </list>
-    <list id="2d2eb26f-43b7-4d66-8457-e2cab81ac773" name="Changes by laurence" comment="">
+    <list id="2d2eb26f-43b7-4d66-8457-e2cab81ac773" name="Changes by laurence" comment=".">
       <change beforePath="$PROJECT_DIR$/explanations/explanations.py" beforeDir="false" afterPath="$PROJECT_DIR$/explanations/explanations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/similarity/compute_ratings.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity/compute_ratings.py" afterDir="false" />
@@ -52,42 +50,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/individual/CollaborativeFiltering.py">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="6" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="14" end1="15" start2="16" end2="17" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="16" end1="17" start2="18" end2="19" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="18" end1="19" start2="20" end2="20" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="25" end1="26" start2="26" end2="27" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="27" end1="27" start2="28" end2="30" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="28" end1="28" start2="31" end2="43" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="34" end1="35" start2="49" end2="51" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="38" end1="41" start2="54" end2="57" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="46" end1="54" start2="62" end2="62" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="55" end1="57" start2="63" end2="63" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="65" end1="66" start2="71" end2="71" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/groups/aggregation.py">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="4" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="5" end1="6" start2="5" end2="6" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="9" end1="10" start2="9" end2="10" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
-        <range start1="13" end1="13" start2="13" end2="14" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="15" end1="28" start2="16" end2="38" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="29" end1="31" start2="39" end2="41" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="33" end1="45" start2="43" end2="55" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="46" end1="50" start2="56" end2="60" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="51" end1="57" start2="61" end2="67" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="58" end1="64" start2="68" end2="74" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="65" end1="77" start2="75" end2="87" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="78" end1="82" start2="88" end2="92" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="83" end1="89" start2="93" end2="99" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="90" end1="96" start2="100" end2="217" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -314,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666103914633</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <created>1666215571794</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666215571794</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +304,7 @@
     <MESSAGE value="check please" />
     <MESSAGE value="CollaborativeFilteringPreProcessed is the final file" />
     <MESSAGE value="ratings system for songs in other playlists fully implemented" />
+    <MESSAGE value="Changes by laurence" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
