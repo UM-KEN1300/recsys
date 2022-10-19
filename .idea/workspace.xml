@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment="ratings system for songs in other playlists fully implemented">
-      <change afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
+    <list default="true" id="33c7f187-f813-4c12-9f9c-bc995df1121c" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual/CollaborativeFiltering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual/CollaborativeFilteringPreProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/individual/CollaborativeFilteringPreProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/similarity/cosine_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity/cosine_similarity.py" afterDir="false" />
     </list>
     <list id="c1434336-431f-404c-9bd6-09a87b76686e" name="Changes by laure" comment="">
       <change beforePath="$PROJECT_DIR$/groups/aggregation.py" beforeDir="false" afterPath="$PROJECT_DIR$/groups/aggregation.py" afterDir="false" />
@@ -59,17 +57,35 @@
     <file path="$PROJECT_DIR$/individual/CollaborativeFiltering.py">
       <ranges>
         <range start1="4" end1="4" start2="4" end2="6" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="5" end1="5" start2="7" end2="10" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="11" end1="12" start2="16" end2="17" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="13" end1="14" start2="18" end2="19" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="15" end1="15" start2="20" end2="21" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="23" end1="23" start2="29" end2="31" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="24" end1="24" start2="32" end2="44" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
-        <range start1="27" end1="27" start2="47" end2="49" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="28" end1="39" start2="50" end2="70" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="40" end1="40" start2="71" end2="73" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="41" end1="41" start2="74" end2="81" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
-        <range start1="43" end1="43" start2="83" end2="89" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
+        <range start1="14" end1="15" start2="16" end2="17" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
+        <range start1="16" end1="17" start2="18" end2="19" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="18" end1="19" start2="20" end2="20" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="25" end1="26" start2="26" end2="27" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="27" end1="27" start2="28" end2="30" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
+        <range start1="28" end1="28" start2="31" end2="43" changelist="2d2eb26f-43b7-4d66-8457-e2cab81ac773" />
+        <range start1="34" end1="35" start2="49" end2="51" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="38" end1="41" start2="54" end2="57" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="46" end1="54" start2="62" end2="62" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="55" end1="57" start2="63" end2="63" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="65" end1="66" start2="71" end2="71" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/groups/aggregation.py">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="4" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="5" end1="6" start2="5" end2="6" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="9" end1="10" start2="9" end2="10" changelist="c1434336-431f-404c-9bd6-09a87b76686e" />
+        <range start1="13" end1="13" start2="13" end2="14" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="15" end1="28" start2="16" end2="38" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="29" end1="31" start2="39" end2="41" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="33" end1="45" start2="43" end2="55" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="46" end1="50" start2="56" end2="60" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="51" end1="57" start2="61" end2="67" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="58" end1="64" start2="68" end2="74" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="65" end1="77" start2="75" end2="87" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="78" end1="82" start2="88" end2="92" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="83" end1="89" start2="93" end2="99" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
+        <range start1="90" end1="96" start2="100" end2="217" changelist="33c7f187-f813-4c12-9f9c-bc995df1121c" />
       </ranges>
     </file>
   </component>
@@ -81,15 +97,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "D:/Users/Dino/Recommender Systems/Project/recsys",
-    "settings.editor.selected.configurable": "pyconsole"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Dino/Recommender Systems/Project/recsys&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;pyconsole&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="recsys" is-module-sdk="true">
@@ -109,7 +125,7 @@
       <recent name="D:\Users\Dino\Recommender Systems\Project\recsys\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CollaborativeFiltering">
+  <component name="RunManager" selected="Python.aggregation">
     <configuration name="CollaborativeFiltering" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cosine_similarity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="aggregation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="recsys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,11 +176,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similarity" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/groups" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similarity/cosine_similarity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/groups/aggregation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.testing_evaluation" />
+        <item itemvalue="Python.aggregation" />
         <item itemvalue="Python.CollaborativeFiltering" />
+        <item itemvalue="Python.testing_evaluation" />
         <item itemvalue="Python.CollaborativeFilteringPreProcessing" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.cosine_similarity" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665999346496</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".">
+      <created>1666103914633</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666103914633</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +335,7 @@
     <MESSAGE value="check please" />
     <MESSAGE value="CollaborativeFilteringPreProcessed is the final file" />
     <MESSAGE value="ratings system for songs in other playlists fully implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="ratings system for songs in other playlists fully implemented" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
