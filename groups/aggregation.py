@@ -120,8 +120,8 @@ for i in range(len(tracks)):
     rating_user_3 = ratings_playlist_3[uri]
     rating_user_4 = ratings_playlist_4[uri]
     if rating_user_1 & rating_user_2 & rating_user_3 & rating_user_4 >= 0.45:
-        final_rating = min(rating_user_1, rating_user_2, rating_user_3, rating_user_4) + \
-            max(rating_user_1, rating_user_2, rating_user_3, rating_user_4)
+        final_rating = (min(rating_user_1, rating_user_2, rating_user_3, rating_user_4) +
+                        max(rating_user_1, rating_user_2, rating_user_3, rating_user_4)) / 2
         ratings_LM_MP_WM.update({uri: final_rating})
     else:
         continue
