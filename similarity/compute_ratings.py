@@ -1,10 +1,10 @@
 import json
 from similarity import cosine_similarity
 print("Loading tracks and playlists..")
-with open("/data/Tracks.json", encoding="utf8") as f:
+with open("../data/Tracks.json", encoding="utf8") as f:
     TRACKS = json.load(f)
 #Maybe we can get a smaller version of this file cause we only really need a couple playlists
-with open("/data/Playlists_small.json", encoding="utf8") as f:
+with open("../data/Playlists_small.json", encoding="utf8") as f:
     PLAYLISTS = json.load(f)
 print('Tracks and playlists loaded!')
 

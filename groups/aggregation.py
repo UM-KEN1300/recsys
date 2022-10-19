@@ -7,7 +7,7 @@ import numpy as np
 print("Loading tracks and playlists..")
 with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Tracks.json", encoding="utf8") as f:
     TRACKS = json.load(f)
-#Maybe we can get a smaller version of this file cause we only really need a couple playlists
+#Maybe we can get a smaller version of this file because we only really need a couple playlists
 with open("D:/Users/Dino/Recommender Systems/Project/recsys/data/Playlists_small.json", encoding="utf8") as f:
     PLAYLISTS = json.load(f)
 print('Tracks and playlists loaded!')

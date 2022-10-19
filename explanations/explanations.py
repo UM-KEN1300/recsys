@@ -1,7 +1,7 @@
 from similarity import compute_ratings
 import json
 
-with open("/data/Tracks.json", "r", encoding='utf-8') as rf:
+with open("../data/Tracks.json", encoding='utf-8') as rf:
     TRACKS = json.load(rf) #is a dictionary! containing tracks that exists through all playlists
 
 #Explanation for a chosen song that is not in the users playlist
